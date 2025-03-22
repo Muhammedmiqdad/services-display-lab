@@ -10,8 +10,8 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  // Base path - use '/' for root domain or '/repo-name/' for GitHub Pages
-  base: mode === 'production' ? '/' : '/',
+  // Base path - use '/' for root domain or '/your-repo-name/' for GitHub Pages
+  base: mode === 'production' ? '/your-repo-name/' : '/',
   plugins: [
     react(),
     mode === 'development' &&
