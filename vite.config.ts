@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   // Base path - use '/' for root domain or '/your-repo-name/' for GitHub Pages
-  base: mode === 'production' ? 'services-display-lab' : '/',
+  base: mode === 'production' ? '/services-display-lab/' : '/',
   plugins: [
     react(),
     mode === 'development' &&
@@ -23,3 +23,4 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
+
